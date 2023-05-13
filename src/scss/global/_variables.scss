@@ -1,0 +1,56 @@
+/*fonts*/
+$font-main: 'Gotham Pro', Arial, sans-serif;
+
+/*fonts-weight*/
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+/*fonts-size*/
+$size-main: 18px;
+$size-small: 16px;
+$size-heading1: 34px;
+//$size-heading2: 40px;
+//$size-heading3: 28px;
+
+/*line-height*/
+$line-height: 1.6;
+$line-height-btn: 1.25;
+$line-height-heading: 1;
+
+/*colors*/
+$white: #ffffff;
+$color-text: #000000;
+$color-text2: rgba(15, 15, 15, 0.8);
+$color-text3: #2E2E2E;
+$color-text4: #494b58;
+$color-text5: #0F0F0F;
+//$color-text3: #ff614c;
+$color-bg1: $white;
+$color-bg2: #99DAE8;
+$color-bg3: #00BBDD;
+$color-bg4: #6D7082;
+$bg-green: #0ECE8C;
+
+/*transition*/
+$transition-link: 0.2s;
+$transition-other: 0.35s;
+
+/*border-radius*/
+$radius-main: 4px;
+$radius-big: 16px;
+
+
+$start-hover:   'min-width: 769px';
+$mobile-small:  'max-width: 380px';
+$mobile:        'max-width: 767px';
+$tablet-small:  'max-width: 910px';
+$tablet:        'max-width: 1024px';
+$laptop:        'max-width: 1180px';
+
+
+//@media all and ($start-hover) {}
+//@media all and ($mobile-small) {}
+//@media all and ($mobile) {}
+//@media all and ($tablet) {}
+//@media all and ($laptop) {}

@@ -1,0 +1,53 @@
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+em, i {
+  font-style: italic;
+}
+strong, b {
+  font-weight: $bold;
+}
+a, .btn {
+  @include transition($transition-link);
+}
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media all and ($mobile) {
+    max-width: 460px;
+    padding: 0 15px;
+  }
+}
+
+.centered-img {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 72.5%;
+  background-color: $color-bg3;
+  img {
+    @include centered();
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+

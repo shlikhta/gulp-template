@@ -1,0 +1,28 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; @include font(); background: $color-bg2; color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media all and ($tablet) {
+    font-size: 16px;
+  }
+  @media all and ($mobile) {
+    font-size: 12px;
+  }
+}
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
+  padding:0;
+  margin:0;
+  outline:none;
+  list-style:none;
+}
+select, input, textarea        { font-size: $size-small; vertical-align:middle; color:$color-text; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit], button     { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font-family: $font-main; color: $color-text; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
