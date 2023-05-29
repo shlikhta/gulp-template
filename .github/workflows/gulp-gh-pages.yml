@@ -4,6 +4,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+    types:
+      - closed
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,6 +15,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 jobs:
+  if: github.event.pull_request.merged == true
   build:
     runs-on: ubuntu-latest
     steps:
