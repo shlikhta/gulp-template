@@ -4,4 +4,8 @@ export { css } from "./css";
 export { scss } from "./scss";
 export { js } from "./js";
 export { img } from "./img";
+export { svg } from "./svg";
 export { server } from "./server";
+export { deploy } from "./deploy";
+export { font } from "./font";
+export { favicon } from "./favicon";

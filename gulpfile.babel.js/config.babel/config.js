@@ -19,11 +19,27 @@ export const config = {
   js: {
     sourcemaps: true,
   },
+  deploy: {
+    sourcemaps: true,
+  },
   pug: {
-    indent_size: true,
+    beautify: {
+      indent_size: true,
+      extra_liners: ['a', 'button','img', 'span']
+    },
     data: getJsonDataFromDir(appPath.pathData),
   },
   scss: {
     sourcemaps: true,
   },
+  svg: {
+    mode: {
+      css: { // Activate the «css» mode
+        render: {
+          css: true // Activate CSS output (with default options)
+        }
+      }
+    }
+  }
+
 };

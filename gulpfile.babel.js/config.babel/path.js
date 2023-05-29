@@ -32,9 +32,30 @@ export const path = {
     build: pathBuild + "/js",
   },
   img: {
-    src: pathSrc + "/img/*.{png,jpg,jpeg,gif,svg}",
+    src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
     watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
     dev: pathDev + "/img",
     build: pathBuild + "/img",
   },
+  favicon: {
+    src: pathSrc + "/favicon/**/*.{png,ico,webmanifest}",
+    watch: pathSrc + "/favicon/**/*.{png,ico,webmanifest}",
+    dev: pathDev + "/favicon",
+    build: pathBuild + "/favicon",
+  },
+  font: {
+    src: pathSrc + "/fonts/**/*.{eot,svg,ttf,woff}",
+    watch: pathSrc + "/fonts/**/*.{eot,svg,ttf,woff}",
+    dev: pathDev + "/fonts",
+    build: pathBuild + "/fonts",
+  },
+  svg: {
+    src: pathSrc + "/svg-icons/*.svg",
+    watch: pathSrc + "/svg-icons/*.svg",
+    dev: pathDev + "/sprite",
+    build: pathBuild + "/sprite",
+  },
+  deploy: {
+    src: pathBuild + '/**/*'
+  }
 };

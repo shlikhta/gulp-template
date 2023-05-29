@@ -10,18 +10,18 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-      - name: Use Node.js 18
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
-      - name: Install Dependenc
+      - name: Install Dependency
         run: npm ci
-      - name: Build Prod  
+      - name: Build Prod
         run: gulp --production
       - name: Upload Artifact
-        with: 
+        uses: actions/upload-artifact@v3
+        with:
           path: build
           name: build-files
   deploy:
@@ -30,6 +30,6 @@ jobs:
     steps:
       - name: Get build priject
         uses: actions/download-artifact@v3
-        with: 
+        with:
           name: build-files
-      
+

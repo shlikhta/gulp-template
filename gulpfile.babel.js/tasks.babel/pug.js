@@ -1,12 +1,11 @@
 import gulp from "gulp";
 import pugs from "gulp-pug";
 import plumber from "gulp-plumber";
-import beautify from "gulp-beautify";
+import formatHTML from 'gulp-format-html'
 import gulpIf from "gulp-if";
-import webpHtml from "gulp-webp-html";
-import news from "../../src/data/news.json";
+import webpHtml from 'gulp-webp-html-nosvg'
 import { config, path } from "../config.babel";
-import { getJsonDataFromDir, getPathByTask } from "../util.babel";
+import {  getPathByTask } from "../util.babel";
 
 export const pug = () => {
   return gulp
@@ -21,7 +20,7 @@ export const pug = () => {
     .pipe(
       gulpIf(
         config.isProd,
-        beautify.html({ indent_size: config.pug.indent_size })
+        formatHTML()
       )
     )
     .pipe(gulp.dest(getPathByTask("pug")))
