@@ -28,10 +28,9 @@ jobs:
       - name: Build Prod
         run: gulp --production
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: build
-          name: deployment
+          path: './build'
   deploy:
     environment:
       name: github-pages
@@ -42,4 +41,3 @@ jobs:
       - name: Deploy to GitHub Page
         id: deployment
         uses: actions/deploy-pages@v2
-
