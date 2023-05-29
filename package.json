@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp --production",
-    "deploy": "gulp --production && gulp deploy"
+    "build": "gulp --production"
   },
   "babel": {
     "presets": [
