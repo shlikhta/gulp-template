@@ -32,6 +32,24 @@ export const config = {
   scss: {
     sourcemaps: true,
   },
+  favicon: {
+    appName: '',
+    appShortName: '',
+    appDescription: '',
+    start_url: '',
+    path: 'favicons/',
+    icons: {
+      favicons: true,
+      appleIcon: true,
+      android: false,
+      windows: false,
+      yandex: false,
+      coast: false,
+      firefox: false,
+      appleStartup: false,
+    },
+    pipeHTML: false,
+  },
   svg: {
     mode: {
       css: { // Activate the «css» mode

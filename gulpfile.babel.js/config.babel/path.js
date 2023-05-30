@@ -38,10 +38,10 @@ export const path = {
     build: pathBuild + "/img",
   },
   favicon: {
-    src: pathSrc + "/favicon.png",
-    watch: pathSrc + "/favicon.png",
-    dev: pathDev + "/favicon",
-    build: pathBuild + "/favicon",
+    src: pathSrc + "/favicon/favicon.svg",
+    watch: pathSrc + "/favicon/favicon.svg",
+    dev: pathDev + "/favicons",
+    build: pathBuild + "/favicons",
   },
   font: {
     src: pathSrc + "/fonts/**/*.{eot,svg,ttf,woff}",
