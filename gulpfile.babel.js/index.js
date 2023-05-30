@@ -10,15 +10,15 @@ const watcher = () => {
   watch(path.js.watch, { delay: 500 }, js);
   watch(path.img.watch, { delay: 500 }, img);
   watch(path.font.watch, { delay: 500 }, font);
-  watch(path.favicon.watch, { delay: 500 }, favicon);
 };
 
 const dev = series(
   clear,
-  parallel(pug, scss, js, img, font, favicon),
+  favicon,
+  parallel(pug, scss, js, img, font),
   parallel(watcher, server)
 );
-const build = series(clear, parallel(pug, scss, js, img, font, favicon));
+const build = series(clear, favicon, parallel(pug, scss, js, img, font));
 
 export { clear, css, scss, pug, js, img,font, deploy, favicon };
 export default config.isProd ? build : dev;
