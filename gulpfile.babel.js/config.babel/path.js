@@ -38,8 +38,8 @@ export const path = {
     build: pathBuild + "/img",
   },
   favicon: {
-    src: pathSrc + "/favicon/favicon.svg",
-    watch: pathSrc + "/favicon/favicon.svg",
+    src: pathSrc + "/favicon.svg",
+    watch: pathSrc + "/favicon.svg",
     dev: pathDev + "/favicons",
     build: pathBuild + "/favicons",
   },
